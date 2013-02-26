@@ -1,4 +1,8 @@
-%h3 Home
-- @users.each do |user|
-  %p
-    User: #{link_to user.name, user}
+.hero-unit.ac{:role => "main"}
+  .container
+    .row
+      .span12
+        = render 'layouts/messages'
+        %h1 Be a master of your lot
+        %p LocateMyAutos makes it easy to track vehicles and test drives from anywhere
+        %footer
