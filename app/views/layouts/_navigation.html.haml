@@ -1,4 +1,4 @@
-= link_to image_tag('car.png') + "LocateMyAutos", root_path, :class => 'brand'
+= link_to image_tag('car.png') + "#{current_dealer_group.subdomain} LocateMyAutos", root_path, :class => 'brand'
 %ul.nav
   - if user_signed_in?
     %li
