@@ -1,3 +1,5 @@
+=begin
+
 Chef::Log.info("Running deploy/before_migrate.rb...")
 
 Chef::Log.info("Symlinking #{release_path}/public/assets to #{new_resource.deploy_to}/shared/assets")
@@ -14,3 +16,4 @@ execute "rake assets:precompile" do
   command "bundle exec rake assets:precompile"
   environment "RAILS_ENV" => rails_env
 end
+=end
