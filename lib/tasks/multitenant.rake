@@ -13,5 +13,5 @@ namespace :multitenant do
 end
 
 db_tasks.each do |task_name|
-  Rake::Task[task_name].enhance(["multitenant:#{task_name}"])
+  # Rake::Task[task_name].enhance(["multitenant:#{task_name}"])
 end
