@@ -1,3 +1,4 @@
+=begin
 require 'faker'
 
 class FakeData
@@ -129,3 +130,4 @@ class FakeData
     end
   end
 end
+=end
