@@ -15,7 +15,9 @@ private
   helper_method :current_dealer_group
 
   def scope_current_dealer_group(&block)
-    current_dealer_group.scope_schema("public", &block)
+    if request.subdomain
+      current_dealer_group.scope_schema("public", &block)
+    end
   end
 
 end
