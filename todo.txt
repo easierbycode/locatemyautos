@@ -1,3 +1,10 @@
 current:
- - update fake data scripts to use schema_search_path
-   - consolidate fake data scripts
+ - assets:precompile automatically on 'new instance'
+   - use deploy/before_migrate.rb?
+   - does shared/assets need to be created?
+   - does symlink of public/assets -> shared/assets need to happen AFTER precompile?
+
+future:
+ - how do I restart unicorn?
+   - might be:
+     - sudo /srv/www/lma/shared/scripts/unicorn clean-restart
