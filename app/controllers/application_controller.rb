@@ -11,8 +11,8 @@ private
 
   def current_dealer_group
     #@current_dealer_group ||= DealerGroup.find_by_subdomain!(request.subdomain)
-    subdomain = request.subdomain
-    logger.info "subdomain: #{subdomain} (#{subdomain.class})"
+    #subdomain = request.subdomain
+    #logger.info "subdomain: #{subdomain} (#{subdomain.class})"
     DealerGroup.new({ subdomain:"" })
   end
   helper_method :current_dealer_group
