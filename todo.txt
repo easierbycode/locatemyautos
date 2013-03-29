@@ -1,10 +1,10 @@
 current:
- - assets:precompile automatically on 'new instance'
-   - use deploy/before_migrate.rb?
-   - does shared/assets need to be created?
-   - does symlink of public/assets -> shared/assets need to happen AFTER precompile?
+ - "page doesn't exist"
+   - current_dealer_group seems to be cause
+
 
 future:
+ - if I redeploy, are public/assets still there?
  - how do I restart unicorn?
    - might be:
      - sudo /srv/www/lma/shared/scripts/unicorn clean-restart
